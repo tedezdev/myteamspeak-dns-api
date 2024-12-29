@@ -17,15 +17,15 @@ if ($list->count > 0) {
         echo "-------------------<br>";
     }
 } else {
-    echo "dns bulunamadı";
+    echo "DNS Bulunamadı";
 }
 
 // DNS Oluşturma
 $newDns = $teamSpeak->createDns("TedezDev", "127.0.0.1", 9987);
 if ($newDns) {
-    echo "DNS oluşturuldu.";
+    echo "DNS Oluşturuldu.";
 } else {
-    echo "DNS oluşturulamadı.";
+    echo "DNS Oluşturulamadı.";
 }
 
 // DNS Güncelleme

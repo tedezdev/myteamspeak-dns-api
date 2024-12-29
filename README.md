@@ -14,11 +14,11 @@ $list = $teamSpeak->listDns();
 
 if ($list->count > 0) {
 
-    foreach ($list->items as $item) {
-        echo "ID: " . $item->id . "<br>";
-        echo "Name: " . $item->name . "<br>";
-        echo "Host: " . $item->host . "<br>";
-        echo "Port: " . $item->port . "<br>";
+    foreach ($list->items as $dns) {
+        echo "ID: " . $dns->id . "<br>";
+        echo "Name: " . $dns->name . "<br>";
+        echo "Host: " . $dns->host . "<br>";
+        echo "Port: " . $dns->port . "<br>";
         echo "-------------------<br>";
     }
 

@@ -33,7 +33,7 @@ $update = $teamSpeak->updateDns("DNS_ID", "TedezDev", "127.0.0.1", 9987);
 print_r($update);
 
 // DNS Silme
-$deleteDns = $teamSpeak->deleteDns("eWFzaW5leHVz");
+$deleteDns = $teamSpeak->deleteDns("DNS_ID");
 print_r($deleteDns);
 
 ?>

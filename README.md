@@ -5,10 +5,15 @@
 ## Kullanım Örneği
 ```php
 <?php
+
 require_once ('myteamspeak.class.php');
+
 $teamSpeak = new MyTeamSpeak("examp@example.com", "password");
+
 $list = $teamSpeak->listDns();
+
 if ($list->count > 0) {
+
     foreach ($list->items as $item) {
         echo "ID: " . $item->id . "<br>";
         echo "Name: " . $item->name . "<br>";
@@ -16,6 +21,7 @@ if ($list->count > 0) {
         echo "Port: " . $item->port . "<br>";
         echo "-------------------<br>";
     }
+
 } else {
     echo "DNS Bulunamadı";
 }

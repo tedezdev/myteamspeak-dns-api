@@ -1,0 +1,1 @@
+# myteamspeak-dns-api
